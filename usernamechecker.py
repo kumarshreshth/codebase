@@ -16,4 +16,3 @@ if count!=1:
     element=ws.cell(row=row1+1,column=1)
     element.value=username
 wb.save("text.xlsx")
-#need to integrate password and username module   
