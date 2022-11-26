@@ -1,1 +1,1 @@
-Credential Management System
+Credential Management System prototype
