@@ -201,22 +201,22 @@ except Exception as e:
 # suggestion :use more appropriate variable names and file names instead on c, j, test, etc
 
 
-# enhancement 1: add validation in email address that .com should be present at last in email address and there should be characters b/w @ and .com, no special characters in email address except . or - and not grater than 80 characters and no empty space
+# enhancement 0: add validation in email address that .com should be present at last in email address and there should be characters b/w @ and .com, no special characters in email address except . or - and not grater than 80 characters and no empty space
 # enhancement 2: for username no special characters except . or - and not greater than 120 characters
-# enhancement 3: while password update if the previous password matches current password, dont update, display message password cant contain old password, not more than 50 characters
-# enhancement 4: while password update if password contains username, dont update, saying password cant contain username
-# enhancement 5: confirm password module after password validation, and then commit to database
+# enhancement 2: while password update if the previous password matches current password, dont update, display message password cant contain old password, not more than 50 characters
+# enhancement 3: while password update if password contains username, dont update, saying password cant contain username
+# enhancement 4: confirm password module after password validation, and then commit to database
 
 
-# future development 1: prepare the fetch module function based on user type
-# future development 2: prepare mobile number validation and otp module, where a mobile number can be entered/updated only after successfully verified
-# future development 3: when password updation only after otp verified provided via mobile number
-# future development 4: redesign the whole system removing dependency from user type and search first in local then in global
-# future development 5: username does not needs to be unique b/w usertypes, local and global user can have both same username, the id will be different, Gusername for global, Lusername for local, on the same usertype the username has to be unique
-# future development 6: remove complete dependency on username as each username will have unique id genrated by random module appended with usertype and 5 letters of username which will be generated and not input
-# future development 7: username, password and mobile number all are mandatory fields, if empty delete that entry from database during fetch, displaying correct message
-# future development 8: add a company license and expiration date field, based on expiration date, send and email before 20 days to renew system license, send the doc file to email Id, if present else text message on phone
-# future development 9: on expired date delete the databse entry and sent email and test message saying contract expired
-# future development 10: DOB validation logic module, validate DOB based on addhar card, build module for that
-# # future development 11: build address verification through aadhar module
+# future development 0: prepare the fetch module function based on user type
+# future development 1: prepare mobile number validation and otp module, where a mobile number can be entered/updated only after successfully verified
+# future development 2: when password updation only after otp verified provided via mobile number
+# future development 3: redesign the whole system removing dependency from user type and search first in local then in global
+# future development 4: username does not needs to be unique b/w usertypes, local and global user can have both same username, the id will be different, Gusername for global, Lusername for local, on the same usertype the username has to be unique
+# future development 5: remove complete dependency on username as each username will have unique id genrated by random module appended with usertype and 5 letters of username which will be generated and not input
+# future development 6: username, password and mobile number all are mandatory fields, if empty delete that entry from database during fetch, displaying correct message
+# future development 7: add a company license and expiration date field, based on expiration date, send and email before 20 days to renew system license, send the doc file to email Id, if present else text message on phone
+# future development 8: on expired date delete the databse entry and sent email and test message saying contract expired
+# future development 9: DOB validation logic module, validate DOB based on addhar card, build module for that
+# # future development 10: build address verification through aadhar module
  
