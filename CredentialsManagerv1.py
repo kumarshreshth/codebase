@@ -195,7 +195,7 @@ except Exception as e:
     print("Error in execution :" + str(e))
 
 
-# test scenario : in passwordvalidation what if I enter \?=or empty space, they are invalid characters, define a function to exclude these, message saying these characters not allowed
+# test scenario : in passwordvalidation what if I enter \?+=or empty space, they are invalid characters, define a function to exclude these, message saying these characters not allowed
 
 # suggestion : define a module called update details where based on count value either update or insert will be done, instead of repeting the code two times
 # suggestion :use more appropriate variable names and file names instead on c, j, test, etc
@@ -215,5 +215,5 @@ except Exception as e:
 # future development 5: username does not needs to be unique b/w usertypes, local and global user can have both same username, the id will be different, Gusername for global, Lusername for local, on the same usertype the username has to be unique
 # future development 6: remove complete dependency on username as each username will have unique id genrated by random module appended with usertype and 5 letters of username which will be generated and not input
 # future development 7: username, password and mobile number all are mandatory fields, if empty delete that entry from database during fetch, displaying correct message
-# future development 8: add license expiration date field, based on expiration date, send and email before 20 days to renew system license, send the doc file to email Id, if present else text message on phone
+# future development 8: add a company license and expiration date field, based on expiration date, send and email before 20 days to renew system license, send the doc file to email Id, if present else text message on phone
 # future development 9: on expired date delete the databse entry and sent email and test message saying contract expired
