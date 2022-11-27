@@ -217,3 +217,6 @@ except Exception as e:
 # future development 7: username, password and mobile number all are mandatory fields, if empty delete that entry from database during fetch, displaying correct message
 # future development 8: add a company license and expiration date field, based on expiration date, send and email before 20 days to renew system license, send the doc file to email Id, if present else text message on phone
 # future development 9: on expired date delete the databse entry and sent email and test message saying contract expired
+# future development 10: DOB validation logic module, validate DOB based on addhar card, build module for that
+# # future development 11: build address verification through aadhar module
+ 
