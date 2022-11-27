@@ -55,7 +55,7 @@ def lengthValidity(password):
 def specialcharValidity(password):
     m = ""
     count = 0
-    checklist = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"]
+    checklist = ["-","`","~","/","+","_","!", "@", "#", "$", "%", "^", "&",".","<",">","[","]","{","}","|",":",";","'",'"',"*", "(", ")"]
     for c in password:
         if c in checklist:
             count += 1
@@ -195,7 +195,7 @@ except Exception as e:
     print("Error in execution :" + str(e))
 
 
-# test scenario : in passwordvalidation what if I enter :,"'{[\|.?/+=-`~or empty space, they are invalid characters, define a function to exclude these, message saying these characters not allowed
+# test scenario : in passwordvalidation what if I enter \?=or empty space, they are invalid characters, define a function to exclude these, message saying these characters not allowed
 
 # suggestion : define a module called update details where based on count value either update or insert will be done, instead of repeting the code two times
 # suggestion :use more appropriate variable names and file names instead on c, j, test, etc
