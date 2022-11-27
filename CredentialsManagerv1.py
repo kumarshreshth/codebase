@@ -206,6 +206,7 @@ except Exception as e:
 # enhancement 2: while password update if the previous password matches current password, dont update, display message password cant contain old password, not more than 50 characters
 # enhancement 3: while password update if password contains username, dont update, saying password cant contain username
 # enhancement 4: confirm password module after password validation, and then commit to database
+# enhancement 5: while entering in database if user does not exists in selected usertype by user then check in another usertype, if it exists there then inform user that there is user in that usertype, do you want to update details there or create a user here, if create user here then there user needs to be deleted and details should be fetched and maintained, updated here,in case user not found anywhere then enter in the selected usertype
 
 
 # future development 0: prepare the fetch module function based on user type
