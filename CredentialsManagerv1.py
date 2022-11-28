@@ -55,7 +55,7 @@ def lengthValidity(password):
 def specialcharValidity(password):
     m = ""
     count = 0
-    checklist = ["-","`","~","/","+","_","!", "@", "#", "$", "%", "^", "&",".","<",">","[","]","{","}","|",":",";","'",'"',"*", "(", ")"]
+    checklist = ["-","`","~","/","_","!", "@", "#", "$", "%", "^", "&",".","<",">","[","]","{","}","|",":",";","'",'"',"*", "(", ")"]
     for c in password:
         if c in checklist:
             count += 1
