@@ -67,13 +67,45 @@ def specialcharValidity(password):
         return m
 
 
+
+def charnotincluded(password):
+    m=""
+    count=0
+    checklist=["?","+","="," "]
+    for c in password:
+        if c in checklist:
+                if c==" ":
+                 m="your password should not contain empty space"
+                 return m
+                else:
+                 m="your password should not contain "+c
+                 return m
+        else:
+          return m
+    
+    
+    
+def usernameValid(password,username):
+    m=""
+    c=username
+    if c in password:
+        m="username and password can't contain username"
+        return m
+    else:
+        return m
+    
+    
+    
+
 def passwordvalid(password):
     check = []
     digitValid = digitValidity(password)
     charValid = charValidity(password)
     lengthValid = lengthValidity(password)
     specialcharValid = specialcharValidity(password)
-    check.extend([digitValid, charValid, lengthValid, specialcharValid])
+    char_not_included=charnotincluded(password)
+    username_valid=usernameValid(password,username)
+    check.extend([digitValid, charValid, lengthValid, specialcharValid,char_not_included,username_valid])
     n = len(check)
     count = 0
     for c in range(0, n):
