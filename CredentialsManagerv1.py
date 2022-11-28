@@ -94,8 +94,6 @@ def usernameValid(password,username):
     else:
         return m
     
-    
-    
 
 def passwordvalid(password):
     check = []
@@ -105,13 +103,13 @@ def passwordvalid(password):
     specialcharValid = specialcharValidity(password)
     char_not_included=charnotincluded(password)
     username_valid=usernameValid(password,username)
-    check.extend([digitValid, charValid, lengthValid, specialcharValid,char_not_included,username_valid])
+    check.extend([digitValid, charValid, lengthValid,char_not_included ,specialcharValid,username_valid])
     n = len(check)
-    count = 0
+    counter = 0
     for c in range(0, n):
         if check[c] == "":
-            count += 1
-    if count == n:
+            counter += 1
+    if counter == n:
         print("password is accepted")
         return True
     else:
@@ -122,7 +120,7 @@ def passwordvalid(password):
         return False
 
 
-def emailformatValidity(email_address):
+def EmailFormatValidity(email_address):
     m = ""
     count = 0
     checklist = ["@"]
@@ -137,7 +135,7 @@ def emailformatValidity(email_address):
 
 def emailValidity(email_address):
     check = []
-    specialchar = emailformatValidity(email_address)
+    specialchar = EmailFormatValidity(email_address)
     check.extend([specialchar])
     n = len(check)
     count = 0
@@ -227,9 +225,10 @@ except Exception as e:
     print("Error in execution :" + str(e))
 
 
-# test scenario : in passwordvalidation what if I enter \?+=or empty space, they are invalid characters, define a function to exclude these, message saying these characters not allowed
+# test scenario : in passwordvalidation what if I enter \?+=or empty space, for backslash build proper module, they are invalid characters, define a function to exclude these, message saying these characters not allowed
+# test scenario : in password validation what if username is Samy whereas password has with samy, it still contains username, add this test case validation 
 
-# suggestion : define a module called update details where based on count value either update or insert will be done, instead of repeting the code two times
+# suggestion :define a module called update details where based on count value either update or insert will be done, instead of repeting the code two times
 # suggestion :use more appropriate variable names and file names instead on c, j, test, etc
 
 
