@@ -230,10 +230,10 @@ except Exception as e:
 
 # suggestion :define a module called update details where based on count value either update or insert will be done, instead of repeting the code two times
 # suggestion :use more appropriate variable names and file names instead on c, j, test, etc
-
+# suggestion :utility module logic
 
 # enhancement 0: add validation in email address that .com should be present at last in email address and there should be characters b/w @ and .com, no special characters in email address except . or - and not grater than 80 characters and no empty space
-# enhancement 2: for username no special characters except . or - and not greater than 120 characters
+# enhancement 1: for username no special characters except . or - and not greater than 120 characters
 # enhancement 2: while password update if the previous password matches current password, dont update, display message password cant contain old password, not more than 50 characters
 # enhancement 3: while password update if password contains username, dont update, saying password cant contain username
 # enhancement 4: confirm password module after password validation, and then commit to database
