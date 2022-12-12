@@ -26,6 +26,9 @@ Utilisation : Maintain test cases success/failure records, further use data from
 
 #use proper function name and variables and add comment to functions
 
+#mobile number format : "+91 7014 405 433" if +91 present then no precint else add a prefix, no space, 
+and only digits
+
 #use try except
 """try:
  code
