@@ -1,0 +1,34 @@
+Utilisation : Maintain test cases success/failure records, further use data from here to build UI
+
+#decrease redundancy of code
+
+#email address verification : @ and .com should not be aligned
+
+#migration from one user type to another if id exists
+
+#local or Local or LOCAL/ Global or global or GLOBAL
+
+#password cant contain user name, if contains James or james or JAMES then also same 
+
+#password, email Id cant contain empty space in between or end or starting
+
+#userId is unique identifier cant be empty
+
+#if userId does not gets accepted no entry is created further
+
+#userId contains only letters and digits and can contain spaces in between
+
+#no dependency on any other thing except for userId
+
+#break your function into modules
+
+#rename your excel sheet
+
+#use proper function name and variables and add comment to functions
+
+#use try except
+"""try:
+ code
+except Exception as e:
+ print("Error in email validity"+str(e))"""
+
