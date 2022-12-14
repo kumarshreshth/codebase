@@ -26,3 +26,5 @@ Credential Management System
 # future development 12: whenever a new userId is entered, create a registtration module that redirects to fake api and creates a token that lets you register in a local or global system
 
 # future development 13: unit test scripting 
+
+# future development 14: after generation of userid and password fetch secret key from fake api to register user and generate license
