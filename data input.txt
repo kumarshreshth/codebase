@@ -1,0 +1,11 @@
+//////other inputs///////
+0.sample data set(reading webpages)
+1.data search algorithm on webpage
+2.filtering of data based on name filter(most recommended or count)
+3.data injection(database table/csv)
+4.implementation of algorithm(k-means/genetic)
+5.training data, intelligence in data
+6.interface creation
+html into csv
+xml into csv
+json into csv
